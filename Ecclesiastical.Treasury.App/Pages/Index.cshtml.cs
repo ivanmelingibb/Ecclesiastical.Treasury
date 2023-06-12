@@ -1,18 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Ecclesiastical.Treasury.App.Models;
 
 namespace Ecclesiastical.Treasury.App.Pages;
 
-public class IndexModel : PageModel
+public class IndexModel : AuthorizationModel
 {
-    private readonly ILogger<IndexModel> _logger;
-
-    public IndexModel(ILogger<IndexModel> logger)
-    {
-        _logger = logger;
-    }
-
-    public void OnGet()
-    {
-    }
+    
 }

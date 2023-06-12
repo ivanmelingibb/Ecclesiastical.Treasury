@@ -1,0 +1,22 @@
+@page
+@model Ecclesiastical.Treasury.App.Pages.User.Login
+<form method="post" class="form-signin">
+    <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Login</h1>
+
+    <div class="form-floating">
+        <input type="text" class="form-control" asp-for="Username" placeholder="Username">
+        <label asp-for="Username">Username</label>
+    </div>
+    <div class="form-floating">
+        <input type="password" class="form-control" asp-for="Password" placeholder="Password">
+        <label asp-for="Password">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+        <label>
+            <input type="checkbox" asp-for="RememberMe"> Remember me
+        </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+</form>
